@@ -45,6 +45,15 @@ export default {
           { text: "Introduction", link: "/panel/intro" },
         ],
       },
+      {
+        text: "Versa Library",
+        collapsible: true,
+        items: [
+          { text: "Introduction", link: "/lib/intro" },
+          { text: "Setup", link: "/lib/setup" },
+          { text: "Frameworks", link: "/lib/frameworks" },
+        ],
+      },
     ],
     // you can disable the previous and next page here
     docFooter: {
