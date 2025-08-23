@@ -1,6 +1,6 @@
 # Home
 
-We build powerful software solutions for game servers. Our current focus is on enhancing the FiveM experience, with plans to expand into other gaming platforms in the near future. Here you’ll find everything you need to integrate, configure, and get the most out of our tools.
+We build powerful software solutions for game servers. Our current focus is on enhancing the FiveM experience, with plans to expand into other gaming platforms in the near future. This is your hub for integrating, configuring, and unlocking the full power of our tools.
 
 ## 📚 Product Documentation
 - [Versa Panel](./panel/intro)
