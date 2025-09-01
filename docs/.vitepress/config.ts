@@ -38,23 +38,59 @@ export default {
     ],
     // Sidebar
     sidebar: [
-      {
-        text: "Versa Panel",
-        collapsible: true,
-        items: [
-          { text: "Introduction", link: "/panel/intro" },
-        ],
-      },
-      {
-        text: "Versa Library",
-        collapsible: true,
-        items: [
-          { text: "Introduction", link: "/lib/intro" },
-          { text: "Setup", link: "/lib/setup" },
-          { text: "Frameworks", link: "/lib/frameworks" },
-        ],
-      },
-    ],
+    {
+      text: "Versa Panel",
+      link: "/panel/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Setup", link: "/panel/intro" },
+      ],
+    },
+    {
+      text: "Versa Library",
+      link: "/lib/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Setup", link: "/lib/setup" },
+        {
+          text: "Modules",
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "Server",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Framework", link: "/lib/server/framework" },
+              ],
+            },
+            {
+              text: "Client",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Progress Bar", link: "/lib/client/progressbar" },
+                { text: "Notification", link: "/lib/client/notification" },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      text: "Versa Weed",
+      link: "/weed/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Intro", link: "/weed/intro" },
+      ],
+    },
+  ],
+
     // you can disable the previous and next page here
     docFooter: {
       prev: false,
