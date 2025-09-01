@@ -22,9 +22,9 @@ features:
   - icon: 💻
     title: <a href="/panel/intro">Versa Panel</a>
     details: The All-in-One Versatile Panel for Game Server Management
-  - icon: 👀
-    title: Coming Soon
-    details: Coming Soon
+  - icon: 📚
+    title: <a href="/lib/intro">Versa Library</a>
+    details: A modular utility library for FiveM & RedM
   - icon: 👀
     title: Coming Soon
     details: Coming Soon
