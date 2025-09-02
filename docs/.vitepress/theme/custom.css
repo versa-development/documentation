@@ -49,3 +49,14 @@
   border-radius: 20px;
   padding: 0.5rem 1.4rem;
 }
+
+/* Removed borders between each sidebar option */
+.VPDocAsideOutline .outline-link,
+.VPSidebar .group + .group {
+  border-top: none !important;
+}
+
+/* Shrinks gap between each menu option on sidebar */
+.VPSidebarItem.level-0 {
+  padding-bottom: 8px !important; /* adjust to taste */
+}
