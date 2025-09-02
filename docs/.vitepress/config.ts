@@ -65,6 +65,10 @@ export default {
               collapsed: true,
               items: [
                 { text: "Framework", link: "/lib/server/framework" },
+                { text: "Inventory", link: "/lib/server/inventory" },
+                { text: "HTTP", link: "/lib/server/http" },
+                { text: "Hooks", link: "/lib/server/hooks" },
+                { text: "Chunks", link: "/lib/server/chunks" },
               ],
             },
             {
@@ -72,6 +76,7 @@ export default {
               collapsible: true,
               collapsed: true,
               items: [
+                { text: "Target", link: "/lib/client/target" },
                 { text: "Progress Bar", link: "/lib/client/progressbar" },
                 { text: "Notification", link: "/lib/client/notification" },
               ],
