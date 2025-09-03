@@ -45,7 +45,7 @@ end)
 ```
 **Parameters**
 - `hookName` (string) - The name of the hook to listen to
-- `callback` (function) - The function to run when the hook is triggered; returning false will block execution
+- `payload` (function) - The function to run when the hook is triggered; returning false will block execution
 
 **Returns**
 - `listenerId` (string) - Unique ID for this listener, used to delete it later
