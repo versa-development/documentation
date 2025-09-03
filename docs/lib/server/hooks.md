@@ -7,38 +7,57 @@ The **Hooking Module** provides a way to extend and control functionality within
 - **Control flow** – if any hook returns `false`, the main hook action will be cancelled. This makes it easy to implement validation, permissions, or conditional checks.
 - **Dynamic management** – hooks can be removed at runtime if no longer needed.
 
-### Example
-
+## Import
+If you want to import the hook module into any of your scripts, simply follow the code snippet below.
 ```lua
--- Banking Script
-local hook = require '@versa_lib.modules.server.hooks'
+local hook = require '@versa_lib.modules.hooks.server'
+```
 
-RegisterNetEvent('banking:makePayment', function(data)
-    -- Trigger all hooks before running the main logic
-    local success, error = hook.registerHook('makeBankPayment', source, data)
+## trigger
+Trigger a hook and run all registered listeners
+```lua
+-- This would be in the weed script. Inside the function to place a weed pot.
+local success, error = hook.trigger('versa_weed:canPlacePot', {
+    number = math.random(1, 3),
+    string = 'hello',
+    source = source
+})
+```
+**Parameters**
+- `hookName` (string) - The name of the hook to trigger
+- `payload` (table) - Data passed to each listener
 
-    if success then
-        makePayment(data)
-    else
-        notification(source, error or "Payment blocked by a hook")
+**Returns**
+- `success` (boolean) - True if all listeners passed
+- `error` (string|nil) - Error message if a listener blocked the hook
+
+## on
+Register a listener for a hook
+```lua
+-- This could be used anywhere (in this example, an apartment system)
+local hookId = hook.on('versa_weed:canPlacePot', function(payload)
+    if isInApartment(payload.source) then
+        return false, 'You cannot place a pot in your apartment.'
     end
+
+    return true
 end)
+```
+**Parameters**
+- `hookName` (string) - The name of the hook to listen to
+- `callback` (function) - The function to run when the hook is triggered; returning false will block execution
 
--- 3rd Party Script
-local hook = require '@versa_lib.modules.server.hooks'
+**Returns**
+- `listenerId` (string) - Unique ID for this listener, used to delete it later
 
--- Register a hook to intercept bank payments
-local hookId = hook.on('makeBankPayment', function(source, data)
-    -- Example: block players without the correct state
-    if playerState[source] then
-        return true
-    end
 
-    return false, "You are not allowed to make payments right now."
-end)
+## delete
+Delete a registered hook listener by its ID given on the `triggerHook` and `on` functions
+```lua
+local success = hook.delete(hookId)
+```
+**Parameters**
+- `hookId` (string) - The listener ID returned from hook.on
 
--- Command to remove the hook at runtime
-RegisterCommand('deletehook', function()
-    hook.delete(hookId)
-    print("makeBankPayment hook deleted")
-end)
+**Returns**
+- `success` (boolean) - True if the listener was successfully deleted, false otherwise
