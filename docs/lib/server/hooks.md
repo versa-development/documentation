@@ -1,6 +1,6 @@
-# Hooking System
+# Hooking Module
 
-The **Hooking System** provides a way to extend and control functionality within your codebase by registering hooks that run before certain actions are executed. Hooks allow developers to "intercept" logic, modify data, or prevent the default behavior from running altogether.
+The **Hooking Module** provides a way to extend and control functionality within your codebase by registering hooks that run before certain actions are executed. Hooks allow developers to "intercept" logic, modify data, or prevent the default behavior from running altogether.
 
 - **Register hooks anywhere** – you can attach custom logic to a specific hook type from any resource or script.
 - **Shared execution** – all registered hooks for a given type will be executed when that hook is triggered.
