@@ -15,6 +15,16 @@ If you want to import the framework module into any of your scripts, simply foll
 local framework = require '@versa_lib.modules.framework.server'
 ```
 
+## Character Object
+| Field       | Type    | Description                                 |
+|------------|---------|---------------------------------------------|
+| playerId   | string  | The unique citizen ID of the player (player id, state id, citizen id)|
+| source     | number  | The player’s source ID in FiveM            |
+| firstname  | string  | The player’s first name                     |
+| lastname   | string  | The player’s last name                      |
+| fullname   | string  | The player’s full name (firstname + lastname) |
+
+
 ## getPlayer
 Get the character object from a source
 ```lua
