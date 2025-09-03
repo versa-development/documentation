@@ -30,28 +30,81 @@ Get the character object from a source
 ```lua
 local player = framework.getPlayer(source)
 ```
-* @source: `number`
-* @return: `table` | `boolean` 
+**Parameters**
+- `source` (number) - The player’s source
+
+**Returns**
+- `character` (table | false) – The [character object](#character-object) if found, or false if no player exists with that source
 
 ## getPlayerFromId
-Get the character object from the character unqiue identifier
+Get the character object from the player’s unique identifier.
 ```lua
-local player = framework.getPlayerFromId(identifier)
+local player = framework.getPlayerFromId(playerId)
 ```
-* @identifier `number`
-* @return `table` | `boolean`
+**Parameters**  
+- `playerId` (string) – The player’s unique identifier (player id, state id, citizen id)
+
+**Returns**  
+- `character` (table | false) – The [character object](#character-object) if found, or `false` if no player exists with that identifier
 
 ## getPlayers
-Get all active chatracter objects
+Get all active character objects.
+```lua
+local player = framework.getPlayers()
+```
+**Returns**  
+- `characters` (table) – A table containing all currently active [character objects](#character-object)
+
 
 ## getMetaDataValue
-Get a metadata key value pair on a character
+Get a metadata key value pair on a character.
+```lua
+local value = framework.getMetaDataValue(source, key)
+```
+**Parameters**  
+- `source` (number) – The player’s source ID  
+- `key` (string) – The metadata key to retrieve
+
+**Returns**  
+- `value` (any) – The value of the requested metadata key for the [character object](#character-object), or `nil` if it does not exist
 
 ## setMetaDataValue
-Set a metadata key value pair on a character
+Set a metadata key value pair on a character.
+```lua
+local success = framework.setMetaDataValue(source, key, value)
+```
+**Parameters**  
+- `source` (number) – The player’s source ID  
+- `key` (string) – The metadata key to set  
+- `value` (any) – The value to assign to the metadata key
+
+**Returns**  
+- `success` (boolean) – `true` if the value was successfully set, otherwise `false`
 
 ## addMoney
-Add money to a character
+Add money to a character.
+```lua
+local success = framework.addMoney(source, type, amount, reason)
+```
+**Parameters**  
+- `source` (number) – The player’s source ID  
+- `type` (string) – The type of currency ("cash" or "bank")
+- `amount` (number) – The amount of money to add  
+- `reason` (string) – Reason for the transaction
+
+**Returns**  
+- `success` (boolean) – `true` if the money was successfully added, otherwise `false`
 
 ## removeMoney
-Remove money from a character
+Remove money from a character.
+```lua
+local success = framework.removeMoney(source, type, amount, reason)
+```
+**Parameters**  
+- `source` (number) – The player’s source ID  
+- `type` (string) – The type of currency (e.g., `"cash"`, `"bank"`)  
+- `amount` (number) – The amount of money to remove  
+- `reason` (string) – Reason for the transaction (optional for logs)
+
+**Returns**  
+- `success` (boolean) – `true` if the money was successfully removed, otherwise `false`
