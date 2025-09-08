@@ -10,7 +10,7 @@ The **Hooking Module** provides a way to extend and control functionality within
 ## Import
 If you want to import the hook module into any of your scripts, simply follow the code snippet below.
 ```lua
-local hook = require '@versa_lib.modules.hooks.server'
+local hook = require '@versa_sdk.modules.hooks.server'
 ```
 
 ## trigger

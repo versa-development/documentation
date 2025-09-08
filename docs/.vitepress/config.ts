@@ -39,21 +39,12 @@ export default {
     // Sidebar
     sidebar: [
     {
-      text: "Versa Panel",
-      link: "/panel/intro",
+      text: "Versa SDK",
+      link: "/sdk/intro",
       collapsible: true,
       collapsed: true,
       items: [
-        { text: "Setup", link: "/panel/intro" },
-      ],
-    },
-    {
-      text: "Versa Library",
-      link: "/lib/intro",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        { text: "Setup", link: "/lib/setup" },
+        { text: "Setup", link: "/sdk/setup" },
         {
           text: "Modules",
           collapsible: true,
@@ -64,11 +55,11 @@ export default {
               collapsible: true,
               collapsed: true,
               items: [
-                { text: "Framework", link: "/lib/server/framework" },
-                { text: "Inventory", link: "/lib/server/inventory" },
-                { text: "HTTP", link: "/lib/server/http" },
-                { text: "Hooks", link: "/lib/server/hooks" },
-                { text: "Chunks", link: "/lib/server/chunks" },
+                { text: "Framework", link: "/sdk/server/framework" },
+                { text: "Inventory", link: "/sdk/server/inventory" },
+                { text: "HTTP", link: "/sdk/server/http" },
+                { text: "Hooks", link: "/sdk/server/hooks" },
+                { text: "Chunks", link: "/sdk/server/chunks" },
               ],
             },
             {
@@ -76,13 +67,22 @@ export default {
               collapsible: true,
               collapsed: true,
               items: [
-                { text: "Target", link: "/lib/client/target" },
-                { text: "Progress Bar", link: "/lib/client/progressbar" },
-                { text: "Notification", link: "/lib/client/notification" },
+                { text: "Target", link: "/sdk/client/target" },
+                { text: "Progress Bar", link: "/sdk/client/progressbar" },
+                { text: "Notification", link: "/sdk/client/notification" },
               ],
             },
           ],
         },
+      ],
+    },
+    {
+      text: "Versa Panel",
+      link: "/panel/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Setup", link: "/panel/intro" },
       ],
     },
     {

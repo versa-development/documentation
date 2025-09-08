@@ -1,8 +1,8 @@
 # Framework Module
 
-The **Framework Module** acts as a bridge between Versa Library and the RP framework running on your server. Since each framework (QBCore, ESX, QBox, Ox, etc.) has its own unique player and character structures, this module provides a **centralized "character" object** that works the same way across all supported frameworks.
+The **Framework Module** acts as a bridge between the Versa SDK and the RP framework running on your server. Since each framework (QBCore, ESX, QBox, Ox, etc.) has its own unique player and character structures, this module provides a **centralized "character" object** that works the same way across all supported frameworks.
 
-If you are using a custom framework, you can implement a **custom bridge** to connect it into Versa Library. Once integrated, your server scripts can interact with players through the same consistent `character` API, no matter which framework is underneath.
+If you are using a custom framework, you can implement a **custom bridge** to connect it into the Versa SDK. Once integrated, your server scripts can interact with players through the same consistent `character` API, no matter which framework is underneath.
 
 This makes it easier to:
 - Write framework-agnostic scripts that work across multiple servers.
@@ -12,7 +12,7 @@ This makes it easier to:
 ## Import
 If you want to import the framework module into any of your scripts, simply follow the code snippet below.
 ```lua
-local framework = require '@versa_lib.modules.framework.server'
+local framework = require '@versa_sdk.modules.framework.server'
 ```
 
 ## Character Object

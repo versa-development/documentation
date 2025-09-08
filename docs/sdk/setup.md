@@ -1,4 +1,4 @@
-# Versa Library - Setup
+# Versa SDK - Setup
 
 ## **Requirements**
 * [ox_lib](https://github.com/overextended/ox_lib) (Now maintained by [Community Ox](https://github.com/CommunityOx/ox_lib))
@@ -22,4 +22,4 @@ return {
 ## Custom Bridges
 * Sometimes your resouces may not be supported by us out the box.
 * Inside every bridge folder, we have included a folder called custom, with instructions on how to implement your system
-* If you end up setting up a publicly available resource, feel free to make a [pull request](https://github.com/versa-development/versa_lib/pulls) so we can implement it for other people
+* If you end up setting up a publicly available resource, feel free to make a [pull request](https://github.com/versa-development/versa_sdk/pulls) so we can implement it for other people
