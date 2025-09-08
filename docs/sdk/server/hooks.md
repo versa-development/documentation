@@ -52,7 +52,7 @@ end)
 
 
 ## delete
-Delete a registered hook listener by its ID given on the `triggerHook` and `on` functions
+Delete a registered hook listener by its ID given on the `on` function
 ```lua
 local success = hook.delete(hookId)
 ```
