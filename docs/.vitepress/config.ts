@@ -39,6 +39,10 @@ export default {
     // Sidebar
     sidebar: [
     {
+      text: "Home",
+      link: "/home",
+    },
+    {
       text: "Versa SDK",
       link: "/sdk/intro",
       collapsible: true,
