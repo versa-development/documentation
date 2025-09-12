@@ -5,7 +5,7 @@ The **Progress Bar** module acts as a bridge between the Versa SDK and the progr
 ## Import
 
 ```lua
-local progress = require '@versa_sdk.modules.framework.client'
+local progress = require '@versa_sdk.modules.progress.client'
 ```
 
 ## init
