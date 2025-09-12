@@ -16,14 +16,15 @@ local framework = require '@versa_sdk.modules.framework.server'
 ```
 
 ## Character Object
-| Field       | Type    | Description                                 |
-|------------|---------|---------------------------------------------|
-| playerId   | string  | The unique citizen ID of the player (player id, state id, citizen id)|
-| source     | number  | The player’s source ID in FiveM            |
-| firstname  | string  | The player’s first name                     |
-| lastname   | string  | The player’s last name                      |
-| fullname   | string  | The player’s full name (firstname + lastname) |
-
+| Field       | Type    | Description                                                                 |
+|-------------|---------|-----------------------------------------------------------------------------|
+| identifier  | string  | The unique identifier of the player (citizenid, identifier, state id, etc.) |
+| source      | number  | The player's source                                                         |
+| name        | table   | The character’s name data                                                   |
+| ├─ first    | string  | The player’s first name                                                     |
+| ├─ last     | string  | The player’s last name                                                      |
+| └─ full     | string  | The player’s full name (first + last)                                       |
+| metadata    | table   | Arbitrary metadata values attached to the player                            |
 
 ## getPlayer
 Get the character object from a source
@@ -36,13 +37,13 @@ local player = framework.getPlayer(source)
 **Returns**
 - `character` (table | false) – The [character object](#character-object) if found, or false if no player exists with that source
 
-## getPlayerFromId
+## getPlayerFromIdentifier
 Get the character object from the player’s unique identifier.
 ```lua
-local player = framework.getPlayerFromId(playerId)
+local player = framework.getPlayerFromIdentifier(identifier)
 ```
 **Parameters**  
-- `playerId` (string) – The player’s unique identifier (player id, state id, citizen id)
+- `identifier` (string) – The player’s unique identifier (player id, state id, citizen id)
 
 **Returns**  
 - `character` (table | false) – The [character object](#character-object) if found, or `false` if no player exists with that identifier
@@ -50,7 +51,7 @@ local player = framework.getPlayerFromId(playerId)
 ## getPlayers
 Get all active character objects.
 ```lua
-local player = framework.getPlayers()
+local players = framework.getPlayers()
 ```
 **Returns**  
 - `characters` (table) – A table containing all currently active [character objects](#character-object)
