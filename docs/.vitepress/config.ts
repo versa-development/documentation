@@ -59,11 +59,11 @@ export default {
               collapsible: true,
               collapsed: true,
               items: [
+                { text: "Chunks", link: "/sdk/server/chunks" },
                 { text: "Framework", link: "/sdk/server/framework" },
-                { text: "Inventory", link: "/sdk/server/inventory" },
                 { text: "HTTP", link: "/sdk/server/http" },
                 { text: "Hooks", link: "/sdk/server/hooks" },
-                { text: "Chunks", link: "/sdk/server/chunks" },
+                { text: "Inventory", link: "/sdk/server/inventory" },
               ],
             },
             {
@@ -71,9 +71,9 @@ export default {
               collapsible: true,
               collapsed: true,
               items: [
-                { text: "Target", link: "/sdk/client/target" },
-                { text: "Progress Bar", link: "/sdk/client/progressbar" },
                 { text: "Notification", link: "/sdk/client/notification" },
+                { text: "Progress Bar", link: "/sdk/client/progressbar" },
+                { text: "Target", link: "/sdk/client/target" },
               ],
             },
           ],
