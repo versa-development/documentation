@@ -6,3 +6,7 @@ Planned features include:
 - **Middleware support** – insert custom logic before requests hit your route handlers (e.g., request validation, logging, or rate limiting).
 - **Authentication system** – restrict access to endpoints with API keys, tokens, or session-based authentication.
 - **Token-based access control** – issue and validate tokens for secure communication with trusted services.
+
+<br>
+
+# Coming Soon
