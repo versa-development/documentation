@@ -17,8 +17,13 @@
     Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
   /* Code Snippet font */
-  --vp-font-family-mono: "Space Mono", Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  --vp-font-family-mono: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', 'Source Code Pro', 'Cascadia Code', monospace;
+}
+
+code, pre {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 /* Custom Stlye */
