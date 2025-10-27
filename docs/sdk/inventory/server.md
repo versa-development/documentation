@@ -1,17 +1,10 @@
-# Inventory Module
+# Inventory Module - Server
+[Read Here](/sdk/inventory/import) on how to import the module into your scripts!
 
-The **Inventory Module** provides a unified interface for managing player inventories across different FiveM frameworks and inventory systems. Since each framework often handles inventories in its own way, this module standardizes common inventory operations such as adding, removing, and checking items.
-
-## Import
-If you want to import the ivnentory module into any of your scripts, simply follow the code snippet below.
-```lua
-local inventory = require '@versa_sdk.modules.inventory.server'
-```
-
-## giveItem
+## GiveItem
 Gives an item to a player
 ```lua
-local success = inventory.giveItem(source, item, amount, metadata)
+local success = Inventory.GiveItem(source, item, amount, metadata)
 ```
 **Parameters**
 - `source` (number) - The player’s source
@@ -22,10 +15,10 @@ local success = inventory.giveItem(source, item, amount, metadata)
 **Returns**
 - `success` (boolean) – Whether it was successful giving the item
 
-## removeItem
-Get the character object from a source
+## RemoveItem
+Removes the item from a player
 ```lua
-local success = inventory.removeItem(source, item, amount, metadata, slot)
+local success = Inventory.RemoveItem(source, item, amount, metadata, slot)
 ```
 **Parameters**
 - `source` (number) - The player’s source
@@ -37,10 +30,10 @@ local success = inventory.removeItem(source, item, amount, metadata, slot)
 **Returns**
 - `success` (boolean) – Whether it was successful removing the item
 
-## hasItem
-Get the character object from a source
+## HasItem
+Checks if the player has an item and returns the count
 ```lua
-local hasItem, count = inventory.hasItem(source, item, metadata)
+local hasItem, count = Inventory.HasItem(source, item, metadata)
 ```
 **Parameters**
 - `source` (number) - The player’s source

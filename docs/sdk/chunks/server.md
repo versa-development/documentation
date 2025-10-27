@@ -1,27 +1,15 @@
-# Chunk Module
+# Chunk Module - Server
+[Read Here](/sdk/chunks/import) on how to import the module into your scripts!
 
-The **Chunk Module** divides the GTA world into manageable "chunks," similar to how games like Minecraft handle world loading. Objects, NPCs, and other entities are dynamically loaded or unloaded based on the chunk the player is currently in, improving performance and reducing server load.
-
-Key features include:
-- **Dynamic loading** – only the objects and peds in the player’s current chunk (and nearby chunks) are active.
-- **Optimized performance** – reduces memory and CPU usage by unloading distant entities automatically.
-- **Server-defined chunks** – all chunk data is managed server-side, preventing clients from dumping coordinates or discovering hidden locations.
-
-## Import
-If you want to import the chunk module into any of your scripts, simply follow the code snippet below.
-```lua
-local chunk = require '@versa_sdk/modules/framework/chunks'
-```
-
-## create
+## Create
 Create a chunk entity.
 ```lua  
-local success, error = chunk.create(type, key, data)
+local success, error = Chunk.Create(type, key, data)
 ```
 
 **Example:**
 ```lua
-local success, error = chunk.create('object', 'versa_weed_pot_1', {
+local success, error = Chunk.Create('object', 'versa_weed_pot_1', {
     model = 'empty_pot',
     coords = vector4(0, 0, 0, 180),
     target = {
@@ -48,15 +36,15 @@ local success, error = chunk.create('object', 'versa_weed_pot_1', {
 - `success` (boolean) – Whether the chunk entity was created successfully
 - `error` (string | false) – If not successful, this returns an error why the operation failed.
 
-## edit
+## Edit
 Edit a chunk entity
 ```lua  
-local success, error = chunk.edit(key, data)
+local success, error = Chunk.Edit(key, data)
 ```
 
 **Example (Swapping Model & Moving Object):**
 ```lua
-chunk.edit('versa_weed_pot_1', { 
+Chunk.Edit('versa_weed_pot_1', { 
     model = 'full_pot',
     coords = vector4(1, 1, 1, 180) -- Not needed if you only want to swap the model
 })
@@ -64,7 +52,7 @@ chunk.edit('versa_weed_pot_1', {
 
 **Example (Removing the target):**
 ```lua
-chunk.edit('versa_weed_pot_1', { 
+Chunk.Edit('versa_weed_pot_1', { 
     target = false -- You could also define a new target here
 })
 ```
@@ -77,10 +65,10 @@ chunk.edit('versa_weed_pot_1', {
 - `success` (boolean) – Whether the chunk entity was edited successfully
 - `error` (string | false) – If not successful, this returns an error why the operation failed.
 
-## delete
+## Delete
 Delete a chunk entity.
 ```lua  
-local success, error = chunk.delete(key)
+local success, error = Chunk.Delete(key)
 ```
 
 **Parameters**

@@ -55,25 +55,78 @@ export default {
           collapsed: true,
           items: [
             {
-              text: "Server",
+              text: "Chunks",
               collapsible: true,
               collapsed: true,
               items: [
-                { text: "Chunks", link: "/sdk/server/chunks" },
-                { text: "Framework", link: "/sdk/server/framework" },
-                { text: "HTTP", link: "/sdk/server/http" },
-                { text: "Hooks", link: "/sdk/server/hooks" },
-                { text: "Inventory", link: "/sdk/server/inventory" },
+                { text: "Import", link: "/sdk/chunks/import" },
+                { text: "Server", link: "/sdk/chunks/server" },
+                { text: "Client", link: "/sdk/chunks/client" },
               ],
             },
             {
-              text: "Client",
+              text: "Framework",
               collapsible: true,
               collapsed: true,
               items: [
-                { text: "Notification", link: "/sdk/client/notification" },
-                { text: "Progress Bar", link: "/sdk/client/progressbar" },
-                { text: "Target", link: "/sdk/client/target" },
+                { text: "Import", link: "/sdk/framework/import" },
+                { text: "Objects", link: "/sdk/framework/objects" },
+                { text: "Server", link: "/sdk/framework/server" },
+              ],
+            },
+            {
+              text: "Hooks",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/hooks/import" },
+                { text: "Server", link: "/sdk/hooks/server" },
+              ],
+            },
+            {
+              text: "HTTP",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/http/import" },
+                { text: "Server", link: "/sdk/http/server" },
+              ],
+            },
+            {
+              text: "Inventory",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/inventory/import" },
+                { text: "Server", link: "/sdk/inventory/server" },
+              ],
+            },
+            {
+              text: "Notification",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/notification/import" },
+                { text: "Server", link: "/sdk/notification/server" },
+                { text: "Client", link: "/sdk/notification/client" },
+              ],
+            },
+            {
+              text: "Progress Bar",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/progress/import" },
+                { text: "Client", link: "/sdk/progress/client" },
+              ],
+            },
+             {
+              text: "Target",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/target/import" },
+                { text: "Client", link: "/sdk/target/client" },
               ],
             },
           ],

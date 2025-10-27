@@ -1,19 +1,11 @@
-# Progress Bar Module
+# Progress Bar Module - Client
+[Read Here](/sdk/progress/import) on how to import the module into your scripts!
 
-The **Progress Bar** module acts as a bridge between the Versa SDK and the progress bar that you run on your server.  
-
-## Import
-
-```lua
-local progress = require '@versa_sdk.modules.progress.client'
-```
-
-## init
-
+## Init
 Initialize an asynchronous progress bar.
 
 ```lua
-local success = progress.init({
+local success = Progress.Init({
   label = 'Processing...',
   duration = 5000, -- 5 Seconds
   prop = { ... },
