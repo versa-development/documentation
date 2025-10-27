@@ -46,7 +46,7 @@ export default {
       text: "Versa SDK",
       link: "/sdk/intro",
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: "Setup", link: "/sdk/setup" },
         {
@@ -137,7 +137,7 @@ export default {
       text: "Versa Panel",
       link: "/panel/intro",
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: "Setup", link: "/panel/intro" },
       ],
@@ -146,7 +146,7 @@ export default {
       text: "Versa Weed",
       link: "/weed/intro",
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: "Intro", link: "/weed/intro" },
       ],
