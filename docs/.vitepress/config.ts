@@ -65,6 +65,15 @@ export default {
               ],
             },
             {
+              text: "Controls",
+              collapsible: true,
+              collapsed: true,
+              items: [
+                { text: "Import", link: "/sdk/controls/import" },
+                { text: "Client", link: "/sdk/controls/client" },
+              ],
+            },
+            {
               text: "Framework",
               collapsible: true,
               collapsed: true,
