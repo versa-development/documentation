@@ -70,6 +70,7 @@ export default {
               collapsed: true,
               items: [
                 { text: "Import", link: "/sdk/controls/import" },
+                { text: "Control Types", link: "/sdk/controls/types" },
                 { text: "Client", link: "/sdk/controls/client" },
               ],
             },
