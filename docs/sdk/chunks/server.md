@@ -28,7 +28,7 @@ local success, error = Chunk.Create('object', 'versa_weed_pot_1', {
 * **The target connects to the target module setup in the SDK**  
 
 **Parameters**
-- `type` (string) - Either object or ped
+- `type` (string) - `object` | `ped`
 - `key` (string) - A unique identifier for the chunk entity
 - `data` (table) - Chunk Object
 
