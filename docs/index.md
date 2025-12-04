@@ -22,9 +22,9 @@ features:
   - icon: 📦
     title: <a href="/sdk/intro">Versa SDK</a>
     details: A Source Development Kit for FiveM & RedM — modular systems, framework bridges & dev tools
-  - icon: 💻
-    title: <a href="/panel/intro">Versa Panel</a>
-    details: The All-in-One Versatile Panel for Game Server Management
+  - icon: 🍃
+    title: <a href="/weed/intro">Versa Weed</a>
+    details: Advanced drag & drop weed growing & bagging system
   - icon: 👀
     title: Coming Soon
     details: Coming Soon

@@ -46,7 +46,7 @@ export default {
       text: "Versa SDK",
       link: "/sdk/intro",
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       items: [
         { text: "Setup", link: "/sdk/setup" },
         {
@@ -143,7 +143,7 @@ export default {
         },
       ],
     },
-    {
+    /* {
       text: "Versa Panel",
       link: "/panel/intro",
       collapsible: true,
@@ -151,14 +151,40 @@ export default {
       items: [
         { text: "Setup", link: "/panel/intro" },
       ],
-    },
+    }, */
     {
       text: "Versa Weed",
       link: "/weed/intro",
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       items: [
-        { text: "Intro", link: "/weed/intro" },
+        { text: "Requirements", link: "/weed/requirements" },
+        { text: "Install", link: "/weed/install" },
+        {
+          text: "API Reference",
+          collapsible: true,
+          collapsed: true,
+          items: [
+          /*   {
+              text: "Events",
+              link: "/weed/events",
+              collapsible: true,
+              collapsed: true,
+            },
+            {
+              text: "Exports",
+              link: "/weed/exports",
+              collapsible: true,
+              collapsed: true,
+            }, */
+            {
+              text: "Hooks",
+              link: "/weed/hooks",
+              collapsible: true,
+              collapsed: true,
+            },
+          ],
+        },
       ],
     },
   ],
