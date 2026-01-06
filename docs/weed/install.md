@@ -4,6 +4,7 @@ If you are confused or need more help, feel free to make a ticket on our [Discor
 * 💳 [Purchase Here](https://store.versadevelopment.net/package/weed-encrypted)
 
 ## 1. Download Resources
+* Before installing, make sure you have all the [Required Resources](/weed/requirements)
 * Download the `Versa Weed` and `Versa Weed (Props & Animations)` assets from your [Cfx.re Portal](https://portal.cfx.re/assets/granted-assets). 
   * The account you login with on the portal must be the same account you used to [Checkout on our store](https://store.versadevelopment.net/).
 
