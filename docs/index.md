@@ -25,9 +25,9 @@ features:
   - icon: 🍃
     title: <a href="/weed/intro">Versa Weed</a>
     details: Advanced drag & drop weed growing & bagging system
-  - icon: 👀
-    title: Coming Soon
-    details: Coming Soon
+  - icon: 🏢
+    title: <a href="/apartments/intro">Versa Apartments</a>
+    details: Turn any MLO into a fully functional apartment building.
   - icon: 👀
     title: Coming Soon
     details: Coming Soon

@@ -43,6 +43,48 @@ export default {
       link: "/home",
     },
     {
+      text: "Versa Apartments",
+      link: "/apartments/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Requirements", link: "/apartments/requirements" },
+        { text: "Supported MLOs", link: "/apartments/buildings" },
+        {
+          text: "Install",
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "Script",
+              link: "/apartments/install",
+              collapsible: true,
+              collapsed: true,
+            },
+            {
+              text: "Framework",
+              link: "/apartments/frameworks",
+              collapsible: true,
+              collapsed: true,
+            },
+          ],
+        },
+        {
+          text: "API Reference",
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "Exports",
+              link: "/apartments/exports",
+              collapsible: true,
+              collapsed: true,
+            },
+          ],
+        },
+      ],
+    },
+    {
       text: "Versa SDK",
       link: "/sdk/intro",
       collapsible: true,
@@ -143,15 +185,6 @@ export default {
         },
       ],
     },
-    /* {
-      text: "Versa Panel",
-      link: "/panel/intro",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        { text: "Setup", link: "/panel/intro" },
-      ],
-    }, */
     {
       text: "Versa Weed",
       link: "/weed/intro",
