@@ -123,6 +123,7 @@ export default {
               items: [
                 { text: "Import", link: "/sdk/framework/import" },
                 { text: "Objects", link: "/sdk/framework/objects" },
+                { text: "Events", link: "/sdk/framework/events" },
                 { text: "Server", link: "/sdk/framework/server" },
               ],
             },
