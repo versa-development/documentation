@@ -12,6 +12,7 @@ local success, error = Chunk.Create(type, key, data)
 local success, error = Chunk.Create('object', 'versa_weed_pot_1', {
     model = 'empty_pot',
     coords = vector4(0, 0, 0, 180),
+    rotation = vector3(90, 0, 0), -- Optional
     target = {
       title = 'Inspect Pot',
       icon = 'fas fa-seedling',
@@ -45,8 +46,9 @@ local success, error = Chunk.Edit(key, data)
 **Example (Swapping Model & Moving Object):**
 ```lua
 Chunk.Edit('versa_weed_pot_1', { 
-    model = 'full_pot',
-    coords = vector4(1, 1, 1, 180) -- Not needed if you only want to swap the model
+    model = 'full_pot', -- Optional
+    coords = vector4(1, 1, 1, 180), -- Optional
+    rotation = vector3(90, 0, 0) -- Optional
 })
 ```
 
