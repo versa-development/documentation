@@ -16,12 +16,12 @@ export default {
     nav: [
       { text: "Home", link: "/" },
       { text: "Discord", link: "https://discord.gg/FsrujTDbvg" },
-      {
+      /* {
         text: "Products",
         items: [
           { text: "Versa Panel", link: "/panel/intro" },
         ],
-      },
+      }, */
     ],
     // Social Icons
     socialLinks: [
@@ -82,6 +82,36 @@ export default {
             },
           ],
         },
+      ],
+    },
+    {
+      text: "Versa Cases",
+      link: "/cases/intro",
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { text: "Requirements", link: "/cases/requirements" },
+        { text: "Install", link: "/cases/install" },
+        {
+          text: "API Reference",
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: "Events",
+              link: "/cases/events",
+              collapsible: true,
+              collapsed: true,
+            },
+            {
+              text: "Hooks",
+              link: "/cases/hooks",
+              collapsible: true,
+              collapsed: true,
+            },
+          ],
+        },
+        { text: "Custom Effects", link: "/cases/effects" },
       ],
     },
     {
